@@ -1,0 +1,18 @@
+$bg-color: #ffeb35;
+$main-color: #381e1f;
+$gray1: #666;
+$gray2: #aaa;
+$gray3: #eee;
+$gray4: #f7f7f7;
+$opacityBlack: rgba(0, 0, 0, 0.2);
+
+$mobile: "(max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 1200px)";
+$pc: "(min-width: 1201px)";
+
+// height를 필수로 넣을 수 있도록 맨 앞에
+@mixin set-box($height, $width: 100%, $border-radius: 0) {
+  height: $height;
+  width: $width;
+  border-radius: $border-radius;
+}
