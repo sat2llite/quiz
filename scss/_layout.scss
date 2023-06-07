@@ -1,6 +1,6 @@
-// body.no_scroll {
-//   overflow: hidden !important
-// }
+body.no_scroll {
+  overflow: hidden !important;
+}
 // body::-webkit-scrollbar {
 //   width: 5px;  /* 스크롤바의 너비 */
 // }
@@ -18,14 +18,14 @@
 
 #wrap {
   max-width: 768px;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   background: #fff;
   border: 1px solid #000;
 }
 .inner {
   width: 95%;
-  height: 100vh;
+  // height: 100vh;
   margin: auto;
 }
 .flex_center {
@@ -39,7 +39,7 @@ h3 {
 .btn {
   width: 50%;
   text-align: center;
-  background: #84ade2;
+  background: $main-color;
   padding: 15px;
   border-radius: 10px;
   color: #fff;

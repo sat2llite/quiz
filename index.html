@@ -12,13 +12,51 @@
   </head>
   <body>
     <div id="wrap">
-      <div class="inner">
-        <div class="first_page flex_center">
-          <h1><img src="./img/unnamed.png" alt="예시이미지" /></h1>
-          <h3>퀴즈를 시작하시겠습니까?</h3>
-          <a href="./quiz.html" class="btn">시작하기</a>
+      <!-- header START -->
+      <header id="header">
+        <div class="header_wrap">
+          <!-- gnb start -->
+          <nav class="gnb">
+            <!-- header logo -->
+            <h1 class="header_logo">
+              <a href="#">logo</a>
+            </h1>
+
+            <div class="hamburger">
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+
+            <ul class="m_header_ul flex_center">
+              <li><a href="#">MENU 1</a></li>
+              <li><a href="#">MENU 2</a></li>
+              <li><a href="#">MENU 3</a></li>
+              <li><a href="#">MENU 4</a></li>
+            </ul>
+          </nav>
+          <!-- gnb end -->
         </div>
-      </div>
+      </header>
+      <!-- header END -->
+
+      <section id="section01" class="main">
+        <div class="inner">
+          <div class="first_page flex_center">
+            <h1><img src="./img/unnamed.png" alt="예시이미지" /></h1>
+            <h3>당신의 이름은?</h3>
+            <input
+              type="text"
+              placeholder="이름을 작성하세요"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='이름을 작성하세요'"
+            />
+            <a href="./quiz.html" class="btn">시작하기</a>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

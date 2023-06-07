@@ -20,3 +20,10 @@ img {
   width: 100%;
   vertical-align: middle; 
 }
+input {
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid $gray1;
+  outline: none;
+}
