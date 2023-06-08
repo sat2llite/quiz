@@ -1,6 +1,7 @@
 #header {
   @include set-box(100px, 100%);
-  background: $main-color;
+  background: #fff;
+  border-bottom: 1px solid $gray2;
 
   .header_wrap {
     padding: 0 50px;
