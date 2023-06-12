@@ -44,9 +44,19 @@ img {
 .btn {
   width: 50%;
   text-align: center;
-  background: $btn-color;
+  background: $dark-gray;
   padding: 15px;
   border-radius: 10px;
+  border: none;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+input {
+  width: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  // border: 1px solid $gray1;
+  border: none;
+  outline: none;
+  
 }

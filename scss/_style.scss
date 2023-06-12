@@ -66,7 +66,7 @@
 //   }
 // }
 
-#section01.main {
+#container.main {
   .first_page {
     flex-direction: column;
   }
@@ -75,15 +75,28 @@
 
 
 // quiz
-#section01.quiz {
-  .first_page {
-    flex-direction: column;
-  }
-
+#container.quiz {
   .quiz_page {
     flex-direction: column;
 
     h3 {
+      padding: 5rem 2rem;
+      background: #fff;
+      border-radius: 10px;
+      border: 2px solid #000;
+    }
+  }
+}
+
+// result
+#container.result {
+  .result_page {
+    flex-direction: column;
+
+    img { width: 50%; }
+
+    .result_wrap {
+      height: 28rem;
       padding: 5rem 2rem;
       background: #fff;
       border-radius: 10px;

@@ -1,4 +1,5 @@
 // 햄버거 메뉴
+/*
 const hamburgerMenu = document.querySelector(".m_header_ul");
 const hamburgerIcon = document.querySelector(".hamburger");
 const hamburgerIconOn = document.querySelector(".hamburger.on");
@@ -17,12 +18,15 @@ hamburgerIcon.addEventListener("click", () => {
     gnb.style.visibility = "visible";
   }
 });
+*/
 
 // index.html
 const inputBox = document.querySelector("input");
 const startBtn = document.querySelector(".start_btn");
 
 // quiz.html
-const img = document.querySelector(".quiz_page > h1");
-const question = document.querySelector(".quiz_page > h3");
+import quiz from "./quiz.js";
+console.log(quiz);
+
+const question = document.querySelector(".quiz_wrap > h3");
 const nextBtn = document.querySelector(".next_btn");
