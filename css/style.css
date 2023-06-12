@@ -55,7 +55,7 @@ body.no_scroll {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 img {
@@ -68,7 +68,7 @@ img {
 .btn {
   width: 50%;
   text-align: center;
-  background: #ff8800;
+  background: #ff5e00;
   padding: 15px;
   border-radius: 10px;
   color: #fff;
@@ -89,7 +89,10 @@ img {
   flex-direction: column;
 }
 #section01.quiz .quiz_page h3 {
-  padding: 50px 0;
+  padding: 5rem 2rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #000;
 }
 
 /*# sourceMappingURL=style.css.map */
