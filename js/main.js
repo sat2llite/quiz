@@ -17,3 +17,12 @@ hamburgerIcon.addEventListener("click", () => {
     gnb.style.visibility = "visible";
   }
 });
+
+// index.html
+const inputBox = document.querySelector("input");
+const start = document.querySelector(".start_btn");
+
+// quiz.html
+const img = document.querySelector(".quiz_page > h1");
+const question = document.querySelector(".quiz_page > h3");
+const next = document.querySelector(".next_btn");
