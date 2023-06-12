@@ -26,7 +26,7 @@ const startBtn = document.querySelector(".start_btn");
 
 // quiz.html
 import quiz from "./quiz.js";
-console.log(quiz);
+console.log("quiz : ", quiz);
 
 const question = document.querySelector(".quiz_wrap > h3");
 const nextBtn = document.querySelector(".next_btn");
