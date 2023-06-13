@@ -8,8 +8,8 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- js -->
-    <script defer src="./js/main.js"></script>
     <script type="module" src="./js/quiz.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </head>
   <body>
     <div id="wrap">
@@ -30,8 +30,15 @@
             <h1><img src="./img/quiz1.png" alt="예시이미지" /></h1>
             <div class="quiz_wrap">
               <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+              <input
+                type="text"
+                placeholder="정답은?"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='정답은?'"
+              />
             </div>
-            <a href="result.html" class="btn next_btn">다음 문제</a>
+            <a href="#" class="btn next_btn">다음 문제</a>
+            <a href="#" class="btn result_btn">결과보기</a>
           </div>
         </div>
       </div>

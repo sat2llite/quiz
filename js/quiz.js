@@ -1,4 +1,4 @@
-export default quiz = [
+export default [
   {
     "id": 1,
     "question": "총을 대충 쏘면?",

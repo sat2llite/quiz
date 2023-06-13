@@ -78,6 +78,7 @@ input {
 
 #container.main .first_page {
   flex-direction: column;
+  padding: 50px 0;
 }
 #container.main input {
   margin-top: 30px;
@@ -86,15 +87,30 @@ input {
 #container.quiz .quiz_page {
   flex-direction: column;
 }
+#container.quiz .quiz_page .quiz_wrap {
+  width: 90%;
+  text-align: center;
+}
+#container.quiz .quiz_page .quiz_wrap input {
+  width: 100%;
+  margin-top: 1rem;
+}
 #container.quiz .quiz_page h3 {
   padding: 5rem 2rem;
   background: #fff;
   border-radius: 10px;
   border: 2px solid #000;
 }
+#container.quiz .quiz_page .result_btn {
+  display: none;
+}
 
 #container.result .result_page {
   flex-direction: column;
+}
+#container.result .result_page .result_wrap {
+  width: 90%;
+  text-align: center;
 }
 #container.result .result_page img {
   width: 50%;
