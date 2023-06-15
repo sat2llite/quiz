@@ -1,3 +1,5 @@
+export * from "./quiz.js";
+
 // *quiz.html
 import data from "./quizList.js";
 
@@ -5,20 +7,17 @@ const ques = document.querySelector(".quiz_wrap > h3"); // 문제
 const nextBtn = document.querySelector(".next_btn");
 const result_btn = document.querySelector(".result_btn");
 const answerInput = document.querySelector("#answer");
-let index = 0; // 문제의 번호를 기억하는 변수
-let answer = 0; // 문제의 답을 기억하는 변수
+let index = 0; // 문제의 번호를 기억하는 변수 (현재 문제를 가리키는 변수)
+let score; // 점수를 기억하는 변수
 
 const randomQuizList = new Array(10); // 랜덤 문제 저장 배열(10개)
 const answerList = new Array(10); // 답 저장 배열
 
+// 랜덤 문제
 for (let index = 0; index < randomQuizList.length; index++) {
   const randomNumber = Math.floor(Math.random() * 5) + 1; // 난수 발생
-  data[randomNumber].question;
-  randomQuizList[index] = data[randomNumber].question;
-}
-
-for (let answer = 0; answer < answerList.length; answer++) {
-  answerList[answer] = answerInput.value;
+  data[randomNumber];
+  randomQuizList[index] = data[randomNumber];
 }
 
 ques.innerHTML = `${data[index].question}`; // 문제 가져오기
@@ -27,8 +26,7 @@ ques.innerHTML = `${data[index].question}`; // 문제 가져오기
 nextBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  ques.innerHTML = `${randomQuizList[index]}`;
-  index++;
+  ques.innerHTML = `${randomQuizList[index].question}`;
 
   if (index >= randomQuizList.length) {
     nextBtn.style.display="none";
@@ -37,13 +35,28 @@ nextBtn.addEventListener("click", (event) => {
 
 
   // input 값 저장
-  console.log(answerList);
+  answerList[index] = answerInput.value;
+  index++;
 
   // input 초기화
   answerInput.value = "";
 });
 
+// 결과보기 버튼 클릭 이벤트
+result_btn.addEventListener("click", (event) => {
+  event.preventDefault();
+  
+  for (let index = 0; index < answerList.length; index++) {
+    if (randomQuizList[index].answer == answerList[index]) {
+      score += 10;
+    }
+  }
+  console.log(score);
 
+
+  // const answerString = JSON.stringify(answerList);
+  // window.localStorage.setItem("result", answerString);
+});
 
 // const randomQuizList = new Array(10);
 
