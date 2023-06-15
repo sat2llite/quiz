@@ -8,7 +8,7 @@ const nextBtn = document.querySelector(".next_btn");
 const result_btn = document.querySelector(".result_btn");
 const answerInput = document.querySelector("#answer");
 let index = 0; // 문제의 번호를 기억하는 변수 (현재 문제를 가리키는 변수)
-let score; // 점수를 기억하는 변수
+let score = 0; // 점수를 기억하는 변수
 
 const randomQuizList = new Array(10); // 랜덤 문제 저장 배열(10개)
 const answerList = new Array(10); // 답 저장 배열
@@ -44,19 +44,20 @@ nextBtn.addEventListener("click", (event) => {
 });
 
 // 결과보기 버튼 클릭 이벤트
-result_btn.addEventListener("click", (event) => {
-  event.preventDefault();
+result_btn.addEventListener("click", () => {
+  answerList[randomQuizList.length - 1] = answerInput.value;
+
+  // console.log(answerList);
   
   for (let index = 0; index < answerList.length; index++) {
     if (randomQuizList[index].answer == answerList[index]) {
       score += 10;
     }
   }
+
+  // const answerScore = JSON.stringify(score);
+  window.localStorage.setItem("score", score);
   console.log(score);
-
-
-  // const answerString = JSON.stringify(answerList);
-  // window.localStorage.setItem("result", answerString);
 });
 
 // const randomQuizList = new Array(10);
