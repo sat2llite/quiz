@@ -20,26 +20,27 @@ for (let index = 0; index < randomQuizList.length; index++) {
   randomQuizList[index] = data[randomNumber];
 }
 
-ques.innerHTML = `${data[index].question}`; // 문제 가져오기
+ques.innerHTML = `${randomQuizList[index].question}`;
 
 // 다음 버튼 클릭이벤트
 nextBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  ques.innerHTML = `${randomQuizList[index].question}`;
-
-  if (index >= randomQuizList.length) {
-    nextBtn.style.display="none";
-    result_btn.style.display="block";
-  }
-
-
   // input 값 저장
   answerList[index] = answerInput.value;
   index++;
 
+  if (index >= randomQuizList.length - 1) {
+    nextBtn.style.display="none";
+    result_btn.style.display="block";
+  }
+  
+  ques.innerHTML = `${randomQuizList[index].question}`;
+
   // input 초기화
   answerInput.value = "";
+
+  // console.log(answerList);
 });
 
 // 결과보기 버튼 클릭 이벤트
