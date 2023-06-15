@@ -4,6 +4,7 @@ export * from "./quiz.js";
 import data from "./quizList.js";
 
 const ques = document.querySelector(".quiz_wrap > h3"); // 문제
+const quizImg = document.querySelector(".quiz_img"); // 문제
 const nextBtn = document.querySelector(".next_btn");
 const result_btn = document.querySelector(".result_btn");
 const answerInput = document.querySelector("#answer");
@@ -31,16 +32,17 @@ nextBtn.addEventListener("click", (event) => {
   index++;
 
   if (index >= randomQuizList.length - 1) {
-    nextBtn.style.display="none";
-    result_btn.style.display="block";
+    nextBtn.style.display = "none";
+    result_btn.style.display = "block";
   }
-  
+
   ques.innerHTML = `${randomQuizList[index].question}`;
 
   // input 초기화
   answerInput.value = "";
-
   // console.log(answerList);
+
+  quizImg.src = "../img/quiz" + [index + 1] + ".png";
 });
 
 // 결과보기 버튼 클릭 이벤트
@@ -48,7 +50,7 @@ result_btn.addEventListener("click", () => {
   answerList[randomQuizList.length - 1] = answerInput.value;
 
   // console.log(answerList);
-  
+
   for (let index = 0; index < answerList.length; index++) {
     if (randomQuizList[index].answer == answerList[index]) {
       score += 10;
