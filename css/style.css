@@ -29,13 +29,13 @@ body.no_scroll {
 }
 
 #wrap {
-  max-width: 768px;
   height: 100vh;
   margin: auto;
   background: #ff9d1c;
 }
 
 .inner {
+  max-width: 768px;
   width: 95%;
   margin: auto;
 }
@@ -52,7 +52,7 @@ h3 {
 
 img {
   display: block;
-  width: 80%;
+  width: 75%;
   height: 100%;
   margin: 0 auto;
 }
