@@ -31,7 +31,37 @@ export default [
   },
   {
     "id": 7,
+    "question": "소금의 유통기한은?",
+    "answer": "천일염"
+  },
+  {
+    "id": 8,
+    "question": "칼이 정색하면?",
+    "answer": "검정색"
+  },
+  {
+    "id": 9,
+    "question": "밤에 성시경이 두명 있으면?",
+    "answer": "야간투시경"
+  },
+  {
+    "id": 10,
+    "question": "바나나가 웃으면?",
+    "answer": "바나나킥"
+  },
+  {
+    "id": 11,
     "question": "",
     "answer": ""
-  }
+  },
+  {
+    "id": 12,
+    "question": "",
+    "answer": ""
+  },
+  {
+    "id": 13,
+    "question": "",
+    "answer": ""
+  },
 ]

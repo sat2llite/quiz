@@ -16,9 +16,16 @@ const answerList = new Array(10); // 답 저장 배열
 
 // 랜덤 문제
 for (let index = 0; index < randomQuizList.length; index++) {
-  const randomNumber = Math.floor(Math.random() * 5) + 1; // 난수 발생
-  data[randomNumber];
-  randomQuizList[index] = data[randomNumber];
+  const randomNumber = Math.floor(Math.random() * 10) + 1; // 난수 발생
+  // data[randomNumber];
+  // randomQuizList[index] = data[randomNumber];  
+
+  if (randomQuizList.indexOf(randomNumber) === -1) {
+    data[randomNumber];
+    randomQuizList[index] = data[randomNumber];
+  } else {
+    index--;
+  }
 }
 
 ques.innerHTML = `${randomQuizList[index].question}`;
@@ -61,14 +68,3 @@ result_btn.addEventListener("click", () => {
   window.localStorage.setItem("score", score);
   console.log(score);
 });
-
-// const randomQuizList = new Array(10);
-
-// for (let i = 0; i < randomQuizList.length; i++) {
-//     const randomNumber = Math.floor(Math.random() * 5) + 1;
-//     randomQuizList.push(data[randomNumber]);
-// }
-
-// console.log(randomQuizList);
-
-// ques.innerHTML = `${randomQuizList[index].question}`
