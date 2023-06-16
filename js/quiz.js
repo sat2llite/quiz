@@ -51,7 +51,7 @@ nextBtn.addEventListener("click", (event) => {
   answerInput.value = "";
   // console.log(answerList);
 
-  quizImg.src = "../img/quiz" + [index + 1] + ".png";
+  quizImg.src = "img/quiz" + [index + 1] + ".png";
 });
 
 // 결과보기 버튼 클릭 이벤트
