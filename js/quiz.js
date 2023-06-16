@@ -17,11 +17,12 @@ const answerList = new Array(10); // 답 저장 배열
 // 랜덤 문제
 for (let index = 0; index < randomQuizList.length; index++) {
   const randomNumber = Math.floor(Math.random() * 10) + 1; // 난수 발생
-  // data[randomNumber];
+  data[randomNumber];
   // randomQuizList[index] = data[randomNumber];  
 
-  if (randomQuizList.indexOf(randomNumber) === -1) {
-    data[randomNumber];
+  // 중복제거
+  if (randomQuizList.indexOf(data[randomNumber]) === -1) {
+    // data[randomNumber];
     randomQuizList[index] = data[randomNumber];
   } else {
     index--;
