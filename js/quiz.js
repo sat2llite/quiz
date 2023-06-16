@@ -16,7 +16,7 @@ const answerList = new Array(10); // 답 저장 배열
 
 // 랜덤 문제
 for (let index = 0; index < randomQuizList.length; index++) {
-  const randomNumber = Math.floor(Math.random() * 10) + 1; // 난수 발생
+  const randomNumber = Math.floor(Math.random() * 10); // 난수 발생
   data[randomNumber];
   // randomQuizList[index] = data[randomNumber];  
 
@@ -27,6 +27,7 @@ for (let index = 0; index < randomQuizList.length; index++) {
   } else {
     index--;
   }
+  // console.log(randomNumber);
 }
 
 ques.innerHTML = `${randomQuizList[index].question}`;
