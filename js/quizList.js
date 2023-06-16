@@ -49,19 +49,19 @@ export default [
     "question": "바나나가 웃으면?",
     "answer": "바나나킥"
   },
-  {
-    "id": 11,
-    "question": "",
-    "answer": ""
-  },
-  {
-    "id": 12,
-    "question": "",
-    "answer": ""
-  },
-  {
-    "id": 13,
-    "question": "",
-    "answer": ""
-  },
+  // {
+  //   "id": 11,
+  //   "question": "",
+  //   "answer": ""
+  // },
+  // {
+  //   "id": 12,
+  //   "question": "",
+  //   "answer": ""
+  // },
+  // {
+  //   "id": 13,
+  //   "question": "",
+  //   "answer": ""
+  // },
 ]
