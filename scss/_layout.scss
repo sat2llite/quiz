@@ -16,10 +16,11 @@ body.no_scroll {
 //   background: #000;
 // }
 
+body { background: $main-color; }
+
 #wrap {
   height: 100vh;
   margin: auto;
-  background: $main-color;
 }
 .inner {
   max-width: 768px;

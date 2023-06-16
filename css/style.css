@@ -28,10 +28,13 @@ body.no_scroll {
   overflow: hidden !important;
 }
 
+body {
+  background: #ff9d1c;
+}
+
 #wrap {
   height: 100vh;
   margin: auto;
-  background: #ff9d1c;
 }
 
 .inner {
