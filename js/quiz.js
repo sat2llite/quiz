@@ -13,6 +13,7 @@ let score = 0; // 점수를 기억하는 변수
 
 const randomQuizList = new Array(10); // 랜덤 문제 저장 배열(10개)
 const answerList = new Array(10); // 답 저장 배열
+const scoreList = new Array(10); // 답 비교 배열
 
 // 랜덤 문제
 for (let index = 0; index < randomQuizList.length; index++) {
@@ -63,10 +64,12 @@ result_btn.addEventListener("click", () => {
   for (let index = 0; index < answerList.length; index++) {
     if (randomQuizList[index].answer == answerList[index]) {
       score += 10;
+      scoreList[index] = true;
+    } else {
+      scoreList[index] = false;
     }
   }
-
-  // const answerScore = JSON.stringify(score);
+  // const answerScore = JSON.stringify(scoreList);
   window.localStorage.setItem("score", score);
-  console.log(score);
+  window.localStorage.setItem("scoreList", JSON.stringify(scoreList));
 });
