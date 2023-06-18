@@ -123,17 +123,14 @@
 
       table {
         width: 100%;
-        border: 1px solid #000;
+        border: 2px solid #000;
         border-collapse: collapse;
         tr {
           margin: auto;
-          display: flex;
-          justify-content: space-between;
         }
         td {
-          width: 90%;
           padding: 30px 0;
-          border: 1px solid #000;
+          border: 2px solid #000;
         }
       }
     }

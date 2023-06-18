@@ -14,6 +14,9 @@ resultTitle.innerHTML = `${nameString}님의 점수는 ${resultString}점 입니
 
 tableResult.forEach((item, index) => {
   item.innerHTML = `${scoreString[index]}`;
+  if (scoreString[index]) {
+    tableResult.src = "img/o.png";
+  }
 })
 
 replayBtn.addEventListener("click", () => {
