@@ -66,7 +66,7 @@ ques.innerHTML = `${randomQuizList[index].question}`;
  */
 const intervalId = setInterval(() => {
     if (count === 0) {
-        // 다음버튼 및 결과보기 버튼의 표시 유무를 확인하여 이벤트 실행 -- Teacher 작성
+        // 다음버튼 및 결과보기 버튼의 표시 유무를 확인하여 이벤트 실행 --
         if (result_btn.style.display != "block") {
             nextBtn.click();
         } else {
@@ -103,10 +103,10 @@ nextBtn.addEventListener("click", (event) => {
     // 답변란 초기화
     answerInput.value = "";
 
-    // 다음 문제에 맡게 퀴즈 이미지 변경
+    // 다음 문제에 맞게 퀴즈 이미지 변경
     quizImg.src = "img/quiz" + [index + 1] + ".png";
 
-    // 남은시간 초기화 및 남은 시간 즉시 표시 -- Teacher 작성
+    // 남은시간 초기화 및 남은 시간 즉시 표시 --
     count = 10;
     document.querySelector("h2").innerHTML = `남은 시간 : ${count}`;
 });
