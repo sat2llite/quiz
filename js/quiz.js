@@ -54,6 +54,8 @@ nextBtn.addEventListener("click", (event) => {
   // console.log(answerList);
 
   quizImg.src = "img/quiz" + [index + 1] + ".png";
+
+  count = 10;
 });
 
 // 10초 타이머
