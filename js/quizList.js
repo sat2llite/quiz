@@ -49,19 +49,54 @@ export default [
     "question": "바나나가 웃으면?",
     "answer": "바나나킥"
   },
-  // {
-  //   "id": 11,
-  //   "question": "",
-  //   "answer": ""
-  // },
-  // {
-  //   "id": 12,
-  //   "question": "",
-  //   "answer": ""
-  // },
-  // {
-  //   "id": 13,
-  //   "question": "",
-  //   "answer": ""
-  // },
+  {
+    "id": 11,
+    "question": "비가 한 시간동안 오면?",
+    "answer": "추적60분"
+  },
+  {
+    "id": 12,
+    "question": "'개가 사람을 가르친다' 를 4글자로 하면?",
+    "answer": "개인지도"
+  },
+  {
+    "id": 13,
+    "question": "나무 4그루를 영어로 하면?",
+    "answer": "포트리스"
+  },
+  {
+    "id": 14,
+    "question": "사과가 웃으면?",
+    "answer": "풋사과"
+  },
+  {
+    "id": 15,
+    "question": "새우가 좋아하는 소설은?",
+    "answer": "대하소설"
+  },
+  {
+    "id": 16,
+    "question": "왕이 넘어지면?",
+    "answer": "킹콩"
+  },
+  {
+    "id": 17,
+    "question": "자동차가 놀라면?",
+    "answer": "카놀라유"
+  },
+  {
+    "id": 18,
+    "question": "왕이 넘어지면?",
+    "answer": "킹콩"
+  },
+  {
+    "id": 19,
+    "question": "왕이 넘어지면?",
+    "answer": "킹콩"
+  },
+  {
+    "id": 20,
+    "question": "왕이 넘어지면?",
+    "answer": "킹콩"
+  },
 ]
