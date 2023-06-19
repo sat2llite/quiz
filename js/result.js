@@ -9,7 +9,7 @@ const tableResult = document.querySelectorAll(".table_result > td > img");
 const nameString = window.localStorage.getItem("name");
 const resultString = window.localStorage.getItem("score");
 const scoreString = JSON.parse(window.localStorage.getItem("scoreList"));
-console.log(scoreString);
+// console.log(scoreString);
 
 resultTitle.innerHTML = `${nameString}님의 점수는 ${resultString}점 입니다.`;
 
