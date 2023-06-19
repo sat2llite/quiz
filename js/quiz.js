@@ -3,7 +3,6 @@ export * from "./quiz.js";
 // *quiz.html
 import data from "./quizList.js";
 
-const time = document.querySelector(".quiz_wrap > h2"); // 남은시간
 const ques = document.querySelector(".quiz_wrap > h3"); // 문제
 const quizImg = document.querySelector(".quiz_img"); // 문제
 const nextBtn = document.querySelector(".next_btn");
@@ -11,7 +10,7 @@ const result_btn = document.querySelector(".result_btn");
 const answerInput = document.querySelector("#answer");
 let index = 0; // 문제의 번호를 기억하는 변수 (현재 문제를 가리키는 변수)
 let score = 0; // 점수를 기억하는 변수
-let count = 3; // 제한시간을 표시하는 변수
+let count = 10; // 제한시간을 표시하는 변수
 
 const randomQuizList = new Array(10); // 랜덤 문제 저장 배열(10개)
 const answerList = new Array(10); // 답 저장 배열
@@ -57,14 +56,14 @@ nextBtn.addEventListener("click", (event) => {
   quizImg.src = "img/quiz" + [index + 1] + ".png";
 });
 
+// 10초 타이머
 const intervalId = setInterval(() => {
-  count--;
-  // time.innerHTML = `남은 시간 : ${count}`;
-
   if (count === 0) {
     nextBtn.click();
-    count = 3;
+    count = 10;
   }
+  document.querySelector("h2").innerHTML = `남은 시간 : ${count}`;
+  count--;
 }, 1000);
 
 // 결과보기 버튼 클릭 이벤트
