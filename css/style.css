@@ -84,7 +84,7 @@ input {
   padding: 50px 0;
 }
 #container.main input {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #container.quiz .quiz_page {
@@ -134,6 +134,7 @@ input {
   margin: auto;
 }
 #container.result .result_page .result_wrap table td {
+  width: 10%;
   padding: 30px 0;
   border: 1px solid #000;
 }

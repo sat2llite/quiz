@@ -86,17 +86,17 @@ export default [
   },
   {
     "id": 18,
-    "question": "왕이 넘어지면?",
-    "answer": "킹콩"
+    "question": "공이 웃으면?",
+    "answer": "풋볼"
   },
   {
     "id": 19,
-    "question": "왕이 넘어지면?",
-    "answer": "킹콩"
+    "question": "미꾸라지보다 큰 것은?",
+    "answer": "미꾸엑스라지"
   },
   {
     "id": 20,
-    "question": "왕이 넘어지면?",
-    "answer": "킹콩"
+    "question": "왕이 헤어질 때 하는 말은?",
+    "answer": "바이킹"
   },
 ]
