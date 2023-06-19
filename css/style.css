@@ -127,7 +127,7 @@ input {
 }
 #container.result .result_page .result_wrap table {
   width: 100%;
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-collapse: collapse;
 }
 #container.result .result_page .result_wrap table tr {
@@ -140,6 +140,9 @@ input {
 }
 #container.result .result_page .result_wrap table td img {
   width: 100%;
+}
+#container.result .result_page .result_wrap table .table_result td {
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
