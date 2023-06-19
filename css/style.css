@@ -138,5 +138,8 @@ input {
   padding: 30px 0;
   border: 1px solid #000;
 }
+#container.result .result_page .result_wrap table td img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
