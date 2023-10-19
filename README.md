@@ -323,7 +323,7 @@ replayBtn.addEventListener("click", () => {
 <br>
 
 
-## Service Worker API
+## PWA
 sw-precache를 사용하여 캐시를 저장하고 오프라인에서도 접속할 수 있도록 코딩했습니다.<br>
 sw-precache는 캐시 가능한 모듈을 만들어 주는 라이브러리입니다.<br>
 sw-precache-config.js 파일을 생성한 후 아래와 같이 작성합니다.
@@ -356,3 +356,39 @@ module.exports = {
   }
 </script>
 ````
+
+또한 manifest.json 파일을 추가하여 앱을 다운로드 받을 수 있도록 설정했습니다.<br>
+service-worker처럼 manifest.json파일도 html 파일에 연결합니다.
+
+```html
+<link rel="manifest" href="./manifest.json">
+```
+
+```json
+// manifest.json
+
+{
+  "short_name": "QUIZ",
+  "name": "QUIZ",
+  "background_color": "#ff9d1c",
+  "icons": [
+    {
+      "src": "./img/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#ff9d1c",
+  "orientation": "portrait",
+  "discription": "PWA 퀴즈"
+}
+
+```
+<br>
